@@ -50,8 +50,7 @@ body {
     margin-left: -10px;
 }
 
-.publication-title {
-}
+.publication-title {}
 
 .publication-banner {
     max-height: parent;
@@ -66,8 +65,7 @@ body {
     object-fit: fit;
 }
 
-.publication-header .hero-body {
-}
+.publication-header .hero-body {}
 
 .publication-title {
     font-family: "Myriad-Pro", "Open Sans", sans-serif;
@@ -89,11 +87,10 @@ body {
     font-weight: bolder;
 }
 
-.publication-authors {
-}
+.publication-authors {}
 
 .publication-authors a {
-   color: hsl(204, 86%, 53%) !important;
+    color: hsl(204, 86%, 53%) !important;
 }
 
 .conference-authors a {
@@ -108,8 +105,7 @@ body {
     display: inline-block;
 }
 
-.publication-banner img {
-}
+.publication-banner img {}
 
 .publication-authors {
     /*color: #4286f4;*/
@@ -133,8 +129,7 @@ body {
     height: 100%;
 }
 
-.publication-body img {
-}
+.publication-body img {}
 
 .results-carousel {
     overflow: hidden;
@@ -170,8 +165,7 @@ body {
     border-radius: 5px;
 }
 
-.interpolation-video-column {
-}
+.interpolation-video-column {}
 
 .interpolation-panel .slider {
     margin: 0 !important;
@@ -199,7 +193,7 @@ body {
 
 .dropdown-item {
     white-space: pre-wrap;
-}  
+}
 
 
 
@@ -210,27 +204,37 @@ body {
 
 
 .custom-heading {
-    font-weight: 800;              /* 更粗的字体 */
-    color: #2a2a2a;                /* 深黑灰色（更清晰） */
-    font-family: 'Open Sans', 'Segoe UI', sans-serif;  /* 可选字体，或继承 Bulma 默认 */
-    letter-spacing: 0.5px;         /* 稍微拉开字符间距更稳重 */
-  }
+    font-weight: 800;
+    /* 更粗的字体 */
+    color: #2a2a2a;
+    /* 深黑灰色（更清晰） */
+    font-family: 'Open Sans', 'Segoe UI', sans-serif;
+    /* 可选字体，或继承 Bulma 默认 */
+    letter-spacing: 0.5px;
+    /* 稍微拉开字符间距更稳重 */
+}
 
 
 
 .section-title {
     font-weight: 800;
-    color: #2a2a2a;                /* 深黑灰色（更清晰） */
+    color: #2a2a2a;
+    /* 深黑灰色（更清晰） */
     font-size: 2rem;
-    font-family: 'Open Sans', 'Segoe UI', sans-serif; /* 可选字体，或继承 Bulma 默认 */
-    letter-spacing: 0.3px;         /* 稍微拉开字符间距更稳重 */
-    text-align: left !important;       /* 明确左对齐 */
-    margin-bottom: 0.2rem; /* 控制标题和线之间的距离 */
+    font-family: 'Open Sans', 'Segoe UI', sans-serif;
+    /* 可选字体，或继承 Bulma 默认 */
+    letter-spacing: 0.3px;
+    /* 稍微拉开字符间距更稳重 */
+    text-align: left !important;
+    /* 明确左对齐 */
+    margin-bottom: 0.2rem;
+    /* 控制标题和线之间的距离 */
 }
-  
+
 .section-divider {
     border: none;
-    border-top: 1px solid #ddd;  /* 细浅灰线 */
+    border-top: 1px solid #ddd;
+    /* 细浅灰线 */
     margin-left: 0;
     margin-right: 0;
     width: 100%;
@@ -246,8 +250,8 @@ body {
     d-contents {
         display: none;
     }
-  }
-  
+}
+
 
 
 
@@ -257,13 +261,16 @@ html {
 
 d-contents {
     display: block;
-    position: fixed;             /* 固定在页面左侧 */
-    top: 150px;                   /* 与页面顶部间距 */
+    position: fixed;
+    /* 固定在页面左侧 */
+    top: 150px;
+    /* 与页面顶部间距 */
     left: 0;
     width: 220px;
-    font-weight: 600; 
+    font-weight: 600;
     font-size: 18px;
-    height: 100vh;               /* 占满视口高度 */
+    height: 100vh;
+    /* 占满视口高度 */
     padding: 1.5em;
     /* background-color: white; */
     /* border-right: none; */
@@ -273,25 +280,25 @@ d-contents {
     background-color: transparent !important;
     border: none !important;
     box-shadow: none !important;
-  
+
     /* ✅ 删除 grid/flex 相关属性 */
     /* max-width, grid-column, grid-row, justify-self, etc. 都不需要 */
-  }
-  
+}
+
 d-contents nav {
     display: block;
 }
-  
+
 d-contents nav h4 {
     margin-top: 0;
     margin-bottom: 1em;
 }
-  
+
 d-contents nav div {
     color: rgba(91, 184, 73, 0.8);
     font-weight: bold;
 }
-  
+
 d-contents nav a {
     color: rgba(0, 0, 0, 0.8);
     border-bottom: none;
@@ -302,44 +309,44 @@ d-contents nav a.active {
     color: #1d4ed8;
     font-weight: bold;
     /* text-decoration: underline; */
-  }
-  
+}
+
 d-contents li {
     list-style-type: none;
 }
-  
+
 d-contents ul {
     padding-left: 1em;
 }
-  
+
 d-contents nav ul li {
     margin-bottom: 0.25em;
 }
-  
+
 d-contents nav a:hover {
     /* text-decoration: underline solid rgba(0, 0, 0, 0.6); */
     text-decoration: solid rgba(0, 0, 0, 0.6);
 
 }
-  
+
 d-contents nav ul {
     margin-top: 0;
     margin-bottom: 6px;
 }
-  
-d-contents nav > div {
+
+d-contents nav>div {
     display: block;
     outline: none;
     margin-bottom: 0.5em;
 }
-  
-d-contents nav > div > a {
+
+d-contents nav>div>a {
     font-size: 13px;
     font-weight: 600;
 }
-  
-d-contents nav > div > a:hover,
-d-contents nav > ul > li > a:hover {
+
+d-contents nav>div>a:hover,
+d-contents nav>ul>li>a:hover {
     text-decoration: none;
 }
 
@@ -359,15 +366,16 @@ d-contents nav > ul > li > a:hover {
     font-size: 1.05em;
     line-height: 1.6;
 }
-  
+
 .justified-output {
     text-align: justify;
     text-justify: inter-word;
 }
-  
+
 .tag-label {
-    color: #888888;       /* 浅灰色 */
-    font-family: monospace; 
+    color: #888888;
+    /* 浅灰色 */
+    font-family: monospace;
 }
 
 
@@ -378,7 +386,23 @@ d-contents nav > ul > li > a:hover {
 
 
 
+
 .zoomin-label {
     color: #6a7bff;
     font-family: monospace;
+}
+
+.tool-call-container {
+    background-color: #ebf0ff;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    font-family: monospace;
+    color: #6a7bff;
+    display: block;
+    white-space: pre-wrap;
+}
+
+.tool-call-container .tag-label {
+    color: inherit;
 }
