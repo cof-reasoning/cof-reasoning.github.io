@@ -403,6 +403,22 @@ d-contents nav>ul>li>a:hover {
     white-space: pre-wrap;
 }
 
+
 .tool-call-container .tag-label {
     color: inherit;
+}
+
+.subsection-title {
+    font-weight: 700;
+    color: #4a4a4a;
+    font-size: 1.5rem;
+    font-family: 'Open Sans', 'Segoe UI', sans-serif;
+    text-align: left !important;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.section-spacer {
+    height: 3rem;
+    display: block;
 }
