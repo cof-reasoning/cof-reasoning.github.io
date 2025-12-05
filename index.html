@@ -265,6 +265,8 @@
 
 
 
+
+
   <section class="section" id="Method">
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
@@ -273,6 +275,18 @@
 
           <h2 class="title is-3 section-title" style="text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);">Method</h2>
           <hr class="section-line">
+
+          <div class="content has-text-justified">
+            <img src="assets/images/visual_agent.jpg" class="interpolation-image" alt=""
+              style="display: block; margin-left: auto; margin-right: auto" width="900" />
+            <p>
+              We build a visual search agent based on the ReAct framework, which solves problems iteratively through a
+              Thought-Action loop. When executing visual search tasks, the agent employs a specific strategy of
+              progressive $\text{zoom-in}$ or refinement via tool execution (e.g., image processing or focusing
+              operations). This method enables the agent to acquire more precise, authentic, and valuable search data to
+              guide subsequent reasoning and decision steps.
+            </p>
+          </div>
 
           <div class="content has-text-justified">
             <img src="assets/images/model_inference.jpg" class="interpolation-image" alt=""
@@ -488,8 +502,8 @@
 
               <p><strong>Output:</strong></p>
 
-              <p class="justified-output">
-                <!-- <span class="tag-label">&lt;think&gt;</span>
+              <!-- <p class="justified-output"> -->
+              <!-- <span class="tag-label">&lt;think&gt;</span>
                 To determine the color of the lock, I need to closely examine the area where the lock is located.
                 However, the lock is not immediately visible, making it difficult to identify its color. To improve
                 visibility, I proceed step by step. I first attempt to locate the lock but find no clear indication due
@@ -508,19 +522,47 @@
                 <span class="zoomin-label">&lt;|image_zoomin|&gt;</span>, which reveals the presence of a mailbox. Upon
                 analyzing this refined area, I confirm that the lock on the mailbox is silver.
                 <span class="tag-label">&lt;/think&gt;</span> -->
+              <!-- </p> -->
+
+              <span class="tag-label">&lt;think&gt;</span>
+              To determine the color of the lock, I need to closely examine the area where the lock is located. However,
+              the lock is not immediately visible, making it difficult to identify its color. To improve visibility, I
+              proceed step by step. I first attempt to locate the lock but find no clear indication due to its small
+              size. I then focus on the red postbox, identifying two bounding boxes: [585, 700, 1305, 1821] and [645,
+              920, 1275, 1821]. I analyze these areas but still cannot locate the lock. Next, I shift my attention to
+              the area above the postbox, locating two bounding boxes: [0, 600, 1425, 1241] and [0, 600, 1425, 1301]. I
+              zoom in the boundingbox.
+              <span class="tag-label">&lt;/think&gt;</span>
+              </p>
+
+              <div>
+                <span class="tag-label">&lt;tool_call&gt;</span>
+                <pre class="json-content"
+                  style="white-space: pre; font-family: monospace; margin: 0; padding: 0; background: transparent;">{
+  "name": "image_zoom_in_tool",
+  "arguments": {
+    "bbox_2d": [0, 600, 1425, 1241]
+  }
+}</pre>
+                <span class="tag-label">&lt;/tool_call&gt;</span>
+              </div>
+
+              <p>
+                <span class="tag-label">&lt;think&gt;</span>
+                This reveals the presence of a mailbox.Upon analyzing this refined area, I confirm that the lock on the
+                mailbox is silver.
+                <span class="tag-label">&lt;/think&gt;</span>
               </p>
 
               <p><span class="tag-label">&lt;answer&gt;</span> B <span class="tag-label">&lt;/answer&gt;</span></p>
+
+
+
+
+
             </div>
           </div>
-
-
-
-
-
         </div>
-      </div>
-    </div>
   </section>
 
 
