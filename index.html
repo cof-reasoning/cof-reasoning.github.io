@@ -429,9 +429,13 @@
                 improve visibility, I proceed step by step. I first identify the bounding box corresponding to the
                 woman.
                 <span class="tag-label">&lt;/think&gt;</span>
-              <div class="tool-call-container">&lt;tool_call&gt;
-                {“name”: “image_zoom_in_tool”, "arguments": {"bbox_2d": [570, 1726, 615, 1848]} }
-                &lt;/tool_call&gt;</div>
+              <div class="tool-call-block">
+                <span class="tag-label">&lt;tool_call&gt;</span>
+                <div class="json-content">
+                  {"name": "image_zoom_in_tool", "arguments": {"bbox_2d": [570, 1726, 615, 1848]}}
+                </div>
+                <span class="tag-label">&lt;/tool_call&gt;</span>
+              </div>
               <span class="tag-label">&lt;think&gt;</span>
               This reveals that the jacket is light blue.
               <span class="tag-label">&lt;/think&gt;</span>

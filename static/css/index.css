@@ -408,6 +408,41 @@ d-contents nav>ul>li>a:hover {
     color: inherit;
 }
 
+
+.tool-call-block {
+    font-family: monospace;
+    /* 使用等宽字体以模仿代码块 */
+    background-color: #e0f2ff;
+    /* 浅蓝色背景 */
+    border: 1px solid #90caf9;
+    /* 蓝色边框 */
+    padding: 10px 15px;
+    /* 内部填充 */
+    border-radius: 5px;
+    /* 圆角 */
+    color: #1565c0;
+    /* 蓝色字体颜色 */
+    display: inline-block;
+    /* 确保背景只包裹内容 */
+    white-space: pre-wrap;
+    /* 保持换行和空格 */
+}
+
+.tool-tag-label {
+    font-weight: bold;
+    color: #004d40;
+    /* 标签的颜色可以略微不同，这里使用深青色 */
+}
+
+.json-content {
+    color: #0d47a1;
+    /* JSON内容的颜色 */
+    padding-left: 10px;
+    display: block;
+}
+
+
+
 .subsection-title {
     font-weight: 700;
     color: #4a4a4a;
